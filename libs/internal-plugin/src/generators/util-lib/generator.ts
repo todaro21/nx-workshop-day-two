@@ -64,7 +64,7 @@ export default async function (tree: Tree, options: UtilLibGeneratorSchema) {
       sourceRoot: `${normalizedOptions.projectRoot}/src`,
       targets: {
         build: {
-          executor: "@bg-hoard/internal-plugin:build",
+          executor: "build internal-plugin",
         },
       },
       tags: normalizedOptions.parsedTags,
